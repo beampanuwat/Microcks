@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "8eda09df-69ff-4ab0-a408-1a6056926fc4",
+		"name": "Microcks",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "version":"1.0",
+		"_exporter_id": "29863616"
+	},
+	"item": [
+		{
+			"name": "GET_VENDOR_OPENITEM",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "4mzo04BPgfXzm39l",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "OE-SERVICE-SIT",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"LIFNR\": \"9910550816\",\r\n    \"BUKRS\": \"510\",\r\n    \"BUDAT\": \"\",\r\n    \"ZTYPE\": \"CLE_C_K\",\r\n    \"BUDAT_FROM\": \"\",\r\n    \"BUDAT_TO\": \"\",\r\n    \"ZUONR\": \"OE*\",\r\n    \"GSBER\": \"\",\r\n    \"MAXHITS\": \"200\",\r\n    \"BELNR_FROM\": \"\",\r\n    \"BELNR_TO\": \"\",\r\n    \"GJAHR\": \"2024\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/apisit/RESTAdapter/VN/GET_VENDOR_OPENITEM",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"apisit",
+						"RESTAdapter",
+						"VN",
+						"GET_VENDOR_OPENITEM"
+					]
+				}
+			},
+			"response": [
+                {
+                    "name": "Internal Order Response",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "http://example.com/api/internal-orders",
+                            "protocol": "http",
+                            "host": [
+                                "example",
+                                "com"
+                            ],
+                            "path": [
+                                "api",
+                                "internal-orders"
+                            ]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "body": "{\"INTERNAL_ORDER_LIST\":{\"item\":[{\"BUKRS\":\"\",\"AUFNR\":\"000060000020\",\"KTEXT\":\"Agro Farm- Int-Freight In-Feed to Farm\",\"GSBER\":\"\",\"AUART\":\"ZI11\"},{\"BUKRS\":\"\",\"AUFNR\":\"000060000002\",\"KTEXT\":\"Agro Farm-Swi Freight-in Feed F To Farm\",\"GSBER\":\"\",\"AUART\":\"ZI11\"}]}}"
+                }
+            ]
+        },
+		{
+			"name": "GET_INTERNAL_ORDER",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "ZQv414tBX9i}d[",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "SE-SERVICE-SIT",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"AUFNR\": \"\",\r\n    \"BUKRS\": \"\",\r\n    \"GSBER\": \"\",\r\n    \"KTEXT\": \"\",\r\n    \"MAXHITS\": \"\",\r\n    \"SYSTEM\": \"\",\r\n    \"INTERNAL_ORDER_LIST\": {\r\n        \"item\": {\r\n            \"BUKRS\": \"\",\r\n            \"AUFNR\": \"\",\r\n            \"KTEXT\": \"\",\r\n            \"GSBER\": \"\",\r\n            \"AUART\": \"\"\r\n        }\r\n    },\r\n    \"RETURN\": {\r\n        \"item\": {\r\n            \"TYPE\": \"\",\r\n            \"ID\": \"\",\r\n            \"NUMBER\": \"\",\r\n            \"MESSAGE\": \"\",\r\n            \"LOG_NO\": \"\",\r\n            \"LOG_MSG_NO\": \"\",\r\n            \"MESSAGE_V1\": \"\",\r\n            \"MESSAGE_V2\": \"\",\r\n            \"MESSAGE_V3\": \"\",\r\n            \"MESSAGE_V4\": \"\"\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/apisit/RESTAdapter/VN/GET_INTERNAL_ORDER",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"apisit",
+						"RESTAdapter",
+						"VN",
+						"GET_INTERNAL_ORDER"
+					]
+				}
+			},
+			"response": [
+                {
+                    "name": "Internal Order Response",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "http://example.com/api/internal-orders",
+                            "protocol": "http",
+                            "host": ["example", "com"],
+                            "path": ["api", "internal-orders"]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "body": "{\"INTERNAL_ORDER_LIST\":{\"item\":[{\"BUKRS\":\"\",\"AUFNR\":\"000060000020\",\"KTEXT\":\"Agro Farm- Int-Freight In-Feed to Farm\",\"GSBER\":\"\",\"AUART\":\"ZI11\"},{\"BUKRS\":\"\",\"AUFNR\":\"000060000002\",\"KTEXT\":\"Agro Farm-Swi Freight-in Feed F To Farm\",\"GSBER\":\"\",\"AUART\":\"ZI11\"}]}}"
+                }
+            ]
+        }
+    ]
+}
